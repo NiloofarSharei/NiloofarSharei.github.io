@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Ming-Feng Ho</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="pub.html"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+            <a href="https://jibancat.github.io/cv.pdf"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
+            <a href="https://github.com/jibancat/"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GitHub</a>
+            <a href="https://sbird.github.io/group.html"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BirdGroup</a>
+            <a href="https://profiles.ucr.edu/mingfeng.ho"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">R'Profile</a>
+            <a href="others.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Others</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="pub.html" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+            <a href="https://jibancat.github.io/cv.pdf" class="w3-bar-item w3-button w3-padding-large">CV</a>
+            <a href="https://github.com/jibancat/" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
+            <a href="https://sbird.github.io/group.html" class="w3-bar-item w3-button w3-padding-large">BirdGroup</a>
+            <a href="https://profiles.ucr.edu/mingfeng.ho" class="w3-bar-item w3-button w3-padding-large">R'Profile</a>
+            <a href="others.html" class="w3-bar-item w3-button w3-padding-large">Others</a>
+
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:140px 20px; min-height: 100%; background-image: url('images/webiste_lya_plot_small.jpeg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <h1 class="w3-margin w3-jumbo" style="color: white;">Ming-Feng Ho</h1>
+        <p class="w3-xlarge" style="color: white;">PhD Candidate of Astrophysics (NASA FINESST FI)</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-62 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Others</h1>
+                <h4 class="w3-text-grey w3-padding-32">Digital humanity, cello, philosophy & literature, dessert making.
+                </h4>
+
+                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
+                        One of my hobbies is text mining.
+                        I was working with a classical Chinese literature researcher,
+                        <a href="http://www.litphil.sinica.edu.tw/people/researchers/Zeb%20Raft">Zeb Raft</a>,
+                        on making digital edition of classical literature,
+                        including Han-Ji - a history book and Wen-Xuan - a book of poems.
+                        It was quite a fun time working with humanity people.
+                        I also sometimes play around with web scraped texts, see below:
+                </p>
+
+                <!-- code 5 -->
+                <div class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
+                    <div class="paperfl">
+                        <!-- first one -->
+                        <span class="papertitle">Digital humanity: Han-ji fetcher</span>
+                        <span class="paperlinks">
+                            [<a href="https://github.com/jibanCat/DigitalHumanities/tree/master/Han-Ji">Github repo</a>]
+                        </span><br />
+                        <!-- second one -->
+                        <span class="papertitle">ML topics in astro-ph</span>
+                        <span class="paperlinks">
+                            [<a href="https://github.com/jibanCat/astro-ph-ml-topics">Github repo</a>]
+                        </span><br />
+                        <!-- third one -->
+                        <span class="papertitle">Neuroscience topics in biorxiv</span>
+                        <span class="paperlinks">
+                            [<a href="https://github.com/jibanCat/neuroscience-biorxiv-topics">Github repo</a>]
+                        </span>
+                    </div>
+                </div>
+
+                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
+                    Besides coding, I like playing cello, (writing) literature, philosophy, making wagashi, cooking, and hiking.
+                    I had stopped playing cello after my undergrad graduation, but COVID gave me lots of time to stay with my cello so I started practising again.
+                    Also, I am very interested in making wagashi (Japanese bean paste desserts).
+                    The photo below is the result of my 2 weeks of practising.
+                    <p>
+                        <img src="images/wagashi.jpeg" id="me" alt="wagashi" title="my wagashi" width=500 />
+                    </p>
+                    And below I made famous Suzhou Mooncakes.
+                    <p>
+                        <img src="images/mooncake.jpg" id="me" alt="mooncake" title="my mooncake" width=400 />
+                    </p>
+    
+                </p>
+                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
+                    I thought I would be a philosophy or literature undergrad, but my literature teacher persuaded me to do science (probably she knew I can't live with my writings).
+                    I wrote essays during my spare time and received a few pure literature/philosophy awards before.
+                    During my undergrad at National Taiwan University, I was a campus newsletter writer and have written a few articles regarding public issues.
+                    I also re-created the departmental newsletter in Physics with my good friends,
+                    <a href="https://physics.dartmouth.edu/people/shan-chang-lin">Shan-Chang Lin (Dartmouth College)</a>,
+                    <a href="https://tw.linkedin.com/in/yu-ching-shen-6041b714b/en-us?trk=people-guest_people_search-card">Yu-Ching Shen (Rice University)</a>,
+                    <a href="https://tw.linkedin.com/in/li-hung-wang-262069164?trk=public_profile_browsemap_profile-result-card_result-card_full-click">Li-Hong Wang (Acer)</a>,
+                    <a href="https://imprs-cpqm.mpg.de/person/59526">Po-Ya Yang (IMPRS)</a>.
+                </p>
+                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
+                    English is not my native language, so I am still trying to practice how to write better in English.
+                    Very recently, I also started to think about the problem of morality and the sources of normativity.
+                    And how western philosophers like Kant answers this question differently from <a href="https://ctext.org/confucianism">Confucianism</a>
+                    philosophers like <a href="https://ctext.org/mengzi">Mencius</a> and <a href="https://ctext.org/xunzi">Xunzi</a>.
+                    I also care about grad student issues (e.g., rent burden and NRST) and higher education in general.
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <img src="images/Me_Palm_Spring.jpg" id="me" alt="Picture of me in Palm Spring, photoed by Yueying." width=300 />
+            </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <h5>Social Media</h5>
+            <a href="https://www.linkedin.com/in/ming-feng-ho-a20431121"><i
+                    class="fab fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.researchgate.net/profile/Ming-Feng-Ho"><i
+                class="fab fa-researchgate w3-hover-opacity"></i></a> 
+            <a href="https://www.facebook.com/airofthehouse"><i
+                class="fab fa-facebook w3-hover-opacity"></i></a> 
+            <h6><a href="mailto: mho026@ucr.edu">Email Me</a></h6>
+        </div>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
