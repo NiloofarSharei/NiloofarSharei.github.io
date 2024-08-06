@@ -1,224 +1,872 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Ming-Feng Ho</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-<link rel="stylesheet" href="style.css" type="text/css"/>
+<!DOCTYPE html><html lang="en">
+<!-- Mirrored from jazzed-kale.cloudvent.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Aug 2024 00:28:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lato", sans-serif
-    }
+  <title>Vonge</title>
+  <meta content="Vonge is a portfolio site template for Jekyll" name="description">
 
-    .w3-bar,
-    h1,
-    button {
-        font-family: "Montserrat", sans-serif
-    }
+  <link href="index.html" rel="canonical">
 
-    .fa-anchor,
-    .fa-coffee {
-        font-size: 200px
-    }
-</style>
+  <!-- Twitter Card -->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="Vonge" name="twitter:title">
+  <meta content="Vonge is a portfolio site template for Jekyll" name="twitter:description">
+  <meta content="/images/01.jpg" name="twitter:image:src">
+
+  <!-- Facebook OpenGraph -->
+  <meta content="Vonge" property="og:title">
+  <meta content="Vonge is a portfolio site template for Jekyll" property="og:description">
+  <meta content="/images/01.jpg" property="og:image">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link data-cms-original-href="/assets/main.css" href="assets/maine42c.css?_cchid=baae76898f60a845bc9639897708776e" rel="stylesheet">
+</head>
 
 <body>
 
-    <!-- Navbar -->
-    <div class="w3-top">
-        <div class="w3-bar w3-grey w3-card w3-left-align w3-large">
-                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-grey" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-                        <a href="pub.html"
-                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
-            <a href="https://jibancat.github.io/cv.pdf"
-                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CV</a>
-            <a href="https://github.com/jibancat/"
-                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GitHub</a>
-            <a href="https://sbird.github.io/group.html"
-                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">BirdGroup</a>
-            <a href="https://profiles.ucr.edu/mingfeng.ho"
-                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">R'Profile</a>
-            <a href="others.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Others</a>
+    
+
+    <!-- begin header -->
+<header class="c-header">
+  <div class="container">
+    <div class="row">
+      <div class="c-header__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+          
+            <img alt="Vonge" class="logo__image" data-cms-original-src="/images/logo.svg" src="images/logo3c0c.svg?_cchid=b3760cc343008be537c7a67b3ef3ce02">
+          
+          </a>
         </div>
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-                <a href="pub.html" class="w3-bar-item w3-button w3-padding-large">Publications</a>
-                <a href="https://jibancat.github.io/cv.pdf" class="w3-bar-item w3-button w3-padding-large">CV</a>
-                <a href="https://github.com/jibancat/" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
-                <a href="https://sbird.github.io/group.html" class="w3-bar-item w3-button w3-padding-large">BirdGroup</a>
-                <a href="https://profiles.ucr.edu/mingfeng.ho" class="w3-bar-item w3-button w3-padding-large">R'Profile</a>
-                <a href="others.html" class="w3-bar-item w3-button w3-padding-large">Others</a>
+        <nav class="main-nav">
+          <div class="main-nav__box">
 
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="w3-container w3-center" style="padding:100px 20px; min-height: 100%; background-image: url('images/webiste_lya_plot_small.jpeg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-        <h1 class="w3-margin w3-jumbo" style="color: white;">Ming-Feng Ho</h1>
-        <p class="w3-xlarge" style="color: white;">PhD Candidate of Astrophysics (NASA FINESST FI)</p>
-    </header>
-
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-62 w3-container">
-        <div class="w3-content">
-            <div class="w3-twothird">
-                <h1>About Me</h1>
-                <h4 class="w3-padding-32">PhD Candidate and NASA FINESST FI in the department of Physics and Astronomy at UC Riverside.</h4>
-
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    I am currently a PhD student at UC Riverside (2018-), advised by Simeon Bird.
-                    I will move to University of Michigan as a Leinweber Center for Theoretical Physics (LCTP) postdoctoral fellow in 2024 Fall.
-                    Broadly speaking, my interest focuses on analyzing astronomical data using novel Bayesian methods.
-                    At UCR, I collaborate with <a href="https://sbird.github.io/">Simeon Bird</a> on multi-fidelity machine learning techniques, enabling Bayesian inference using expensive cosmological galaxy formation simulations (see PRIYA-MF: <a href="https://arxiv.org/abs/2309.03943">arXiv:2309.03943</a>).
-                    I am a Future Investigator and supported by a NASA <a href="https://astrobiology.nasa.gov/news/finesst-proposal-due-date-approaching/">FINESST</a> award, as highlighted in the <a href="https://insideucr.ucr.edu/awards/2021/06/23/physics-graduate-student-receives-prestigious-nasa-fellowship">Inside UCR story</a>.
-                    Besides, I collaborate with <a href="https://www.cse.wustl.edu/~garnett/">Roman Garnett</a> (WUSTL CSE) on Bayesian machine learning in large spectroscopic surveys,
-                    producing reliable catalogs of Damped Lyman-alpha (DLAs) and metal absorbers (<a href="https://arxiv.org/abs/2003.11036">arXiv:2003.11036</a>).
-                    Our GP-DLA technique has been adopted by DESI for finding DLAs and producing reliable 1D flux power spectrum.
-                    Additionally, I am interested in using hierarchical population inference to analyze LIGO's GW data, shedding light on the formation channels for the binary black holes (with <a href="https://cgsr.llnl.gov/experts/fellows-past/william-dawson">Will Dawson</a> and Scott E. Perkins from LLNL).
-                </p>
-                <h4 class="w3-padding-32">Ongoing projects</h4>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    I am currently a Graduate Fellow at Carnegie Observatories, working with <a href="https://www.fakhrizahedy.com">Fakhri S. Zahedy</a> on improving the GP-DLA technique to build an automated finder for Lyman limit systems, which is traditionally very hard to identify in the low-resolution Lyman-alpha forest data.
-                    Also, continuing on my previous emulator works, I am also working on using PRIYA simulations to infer cosmological parameters using P1D of the high-resolution spectroscopic survey data (e.g., KODIAQ, XQ100).
-                </p>
-
-                <h4 class="w3-padding-32">Animations-you-might-like</h4>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    I believe a video is worth a million words. So instead of writing lots of words, I made some videos. There are ~6 million words below.
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    (Background image: Gas particles in Astrid simulation model (120 cMpc/h).)
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xBZLH14Qzyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4ccwRtn-NTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    (Demo: Multi-fidelity emulation in 1D toy data (See <a href="https://github.com/jibanCat/nargp_tensorflow">jibanCat/nargp_tensorflow</a>).)
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tQIytDnWOzk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    (Demo: Bayesian optimization demo, with an increasing observational noise.)
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6JmuqVhSq5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    (Demo: Inferring quasar redshift using a data-driven Gaussian process (<a href="https://arxiv.org/abs/2006.07343">2006.07343</a>).)
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NhUycNaHBzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-                <p class="w3-text-grey" style="text-align: justify;padding: 3%;font-size: 16px;">
-                    (Demo: Inferring damped Lyman alphas absorption (DLAs, typically neutral hydrogen gas around high-z dwarf galaxies) using Gaussian processes and Bayesian model selection (<a href="https://arxiv.org/abs/2003.11036">2003.11036</a>).)
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mv0Z2xABNGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-
-
-                <!-- MF-Box explain -->
-                <h4 class="w3-padding-32">MF-Box: Multi-fidelity and multi-scale emulation</h4>
-                <p>
-                    <img src="images/MF-MS-Emu.png" id="me" alt="NBody" title="Illustration for MF-Box" width=600 />
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    We have extended the idea of multi-fidelity modeling and developed MF-Box (<a href="https://arxiv.org/abs/2306.03144">arXiv:2306.03144</a>), a method for modeling N-body simulations that incorporates multiple particle loads and physical scales. By using two types of cost-effective simulations, L1 and L2, we construct a model that accurately predicts summary statistics derived from the high-fidelity simulation across a wide range of cosmological parameter space. L1 simulates a low particle load in a large volume, while L2 simulates a low particle load in a small volume. By combining the simulations from different volumes, we achieve precise interpolation in a high-dimensional parameter space across scales, significantly reducing computational costs compared to running an additional high-fidelity simulation. MF-Box is versatile and can be applied to various simulation suites, providing an effective solution for interpolating simulations across multiple physical scales using affordable approximations.
-                </p>
-
-                <!-- PRIYA simulaiton -->
-                <h4 class="w3-padding-32">PRIYA: Simulation suite for Lya forest based on Astrid simulation model</h4>
-                <p>
-                    <img src="images/PRIYA-MF.png" id="me" alt="PRIYA" title="PRIYA simulation" width=600 />
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    Based on the concept of multi-fidelity emulation, our research group has designed PRIYA (<a href="https://arxiv.org/abs/2306.05471">arXiv:2306.05471</a>), a multi-resolution simulation suite that spans a 9-dimensional parameter space, including cosmological and astrophysical/thermal parameters. We ran 48 low-resolution simulations with 1,536^3 particles in a 120 Mpc/h box, along with 3 high-fidelity simulations with 3,072^3 particles. These simulations include a comprehensive physics model for galaxy formation based on Astrid, including supernova and AGN feedback, resulting in a realistic population of DLAs. By combining the simulations from these 48 low-resolution simulations with the 3 high-resolution simulations, we have developed a multi-fidelity emulator that achieves interpolation with less than 1% error. This emulator provides a resource-efficient way to explore how summary statistics change based on our galaxy formation model and cosmology. Moreover, it will be used for Bayesian inference in future analysis of Lyman alpha forest data.
-                </p>
-
-                <!-- DLA explain -->
-                <h4 class="w3-padding-32">Gaussian process DLA finder</h4>
-                <p>
-                    <img src="images/RdBu_dlas.png" id="me" alt="DLA_Finder" title="Slide presented in Royal Astronomical Society: 1D ML" width=600 />
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    I have an interest in using machine learning techniques to model the emissions of quasars, which are the lights emitted by supermassive black holes. I have made improvements to a Gaussian process (GP) based model originally developed by <a href="https://www.cse.wustl.edu/~garnett/">Roman Garnett</a> (<a href="https://arxiv.org/abs/1605.04460">arXiv:1605.04460</a>). My modifications in Ho-Bird-Garnett (2021) allow for the identification of <strong>damped Lyman alpha absorbers (DLAs)</strong> in the intergalactic medium, accounting for sub-DLAs and also include a model for a quasar meanflux model (<a href="https://arxiv.org/abs/2003.11036">arXiv:2003.11036</a>, <a href="https://arxiv.org/abs/2103.10964">arXiv:2103.10964</a>).
-                    Furthermore, our research involves performing probabilistic inference on <strong>quasar redshifts</strong> using the Gaussian process based model, as detailed in the work by Fauber et al. (2020) (<a href="https://arxiv.org/abs/2006.07343">arXiv:2006.07343</a>).
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    (Thanks Yongda Zhu for sharing the awesome XQR-30 image made by Dr. Anna-Christina Eilers, which I used it as a reference to make the above DLA figure.)
-                </p>
-
-
-                <!-- Multi-fidelity explain -->
-                <h4 class="w3-padding-32">Multi-fidelity emulation for cosmological simulations</h4>
-                <p>
-                    <img src="images/MF_Analogy.png" id="me" alt="MF_Analogy" title="Slide presented in Carnegie Observatory" width=600 />
-                </p>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    The concept of multi-fidelity modeling is straightforward.
-                    We employ many inexpensive approximations to explore different parameter settings, and only rely on a handful of costly examples to improve the accuracy of those approximations.
-                    To illustrate this, consider the hiring process at a university.
-                    We have numerous graduate student workers who tackle the groundwork of exploring various research topics, while only a few professors are needed to provide guidance and refine the outputs of the students.
-                    You can find more details in the paper by Ho-Bird-Shelton (2021) available at <a href="https://arxiv.org/abs/2105.01081">arXiv:2105.01081</a>.
-                    Recently, we have applied the multi-fidelity technique to emulate Lyman-alpha forest, see Fernandez-Ho-Bird (2022) <a href="https://arxiv.org/abs/2207.06445">arXiv:2207.06445</a>.
-                    As part of my FINESST grant, I will continue utilizing multi-fidelity methods to model halo mass functions and weak lensing statistics.
-                </p>
-                
-                <h4 class="w3-padding-32">Motivation</h4>
-                <p class="w3-text-grey" style="text-align: justify;padding: 2%;font-size: 16px;">
-                    My research is driven by my passion to ease the workload in academia. Over time, I have noticed many people becoming discouraged with research because they were told that spending long hours on tedious tasks was the only way to produce results. However, I strongly believe that we can use automated tools and better models to replace repetitive work, allowing academia to focus more on creative thinking.
-                </p>
-                
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
             </div>
 
-            <div class="w3-third w3-center">
+            <div class="nav__title">Menu</div>
 
-                <img src="images/Me_Boston.jpeg" id="me" alt="Picture of Ming-Feng in Boston (photographer: Shen-Chang)" title="Boston ~" width=300 />
+              <ul class="nav__list list-reset">
+
+              
+                
+                <li class="nav__item">
+                  <a class="nav__link active-link" href="index.html">Home</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a class="nav__link" href="projects/index.html">Projects</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a class="nav__link" href="blog/index.html">Blog</a>
+                </li>
+                
+              
+                
+                <li class="nav__item dropdown">
+                  <span class="nav__link dropdown-toggle">Pages <i class="ion ion-ios-arrow-down arrow-down"></i></span>
+                  <div class="dropdown-menu">
+                    
+                      <a class="nav__link" href="about/index.html">About</a>
+                    
+                      <a class="nav__link" href="elements/index.html">Elements</a>
+                    
+                  </div>
+                </li>
+
+                
+              
+
+            </ul>
+          </div>
+
+          <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(social-link.jekyll.html) params() context() -->
+
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a aria-label="twitter icon" class="social__link" href="https://twitter.com/" rel="noopener" target="_blank"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="github icon" class="social__link" href="https://github.com/" rel="noopener" target="_blank"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="pinterest icon" class="social__link" href="https://pinterest.com/" rel="noopener" target="_blank"><i class="ion ion-logo-pinterest"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="youtube icon" class="social__link" href="https://youtube.com/" rel="noopener" target="_blank"><i class="ion ion-logo-youtube"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+<!--bookshop-live end-->
+        </nav>
+
+        <div class="nav-button">
+          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+    
+
+    <!--
+        Bookshop components are accessed using the bookshop tag,
+        using the same syntax as the standard Jekyll include tag.
+    -->
+    <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+
+<div class="c-page">
+
+
+    <!--bookshop-live name(hero/hero.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
+<!-- begin hero -->
+
+<section class="c-hero animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="c-hero__inner">
+
+          <div class="c-hero__left">
+            <h1 class="c-hero__title">Hi there, I am Vanessa Marley</h1>
+            <div class="c-hero__description"><p><strong>Photographer</strong> and <strong>Visual Content Strategist</strong> from Albany. I work as a lifestyle, product, and landscape photographer, creating images for a diverse range of requests, from online media to printed artwork.</p></div>
+            <div class="c-hero__btn">
+              <a class="cta-button c-button c-button--primary c-button--small" href="#contact">Get in touch</a>
+              <a class="works-button c-button c-button--secondary c-button--small" href="#projects">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> See my works
+              </a>
             </div>
-        </div>
-    </div>
-    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-        <h1 class="w3-margin w3-xlarge"><p>“To the Bayesian all things are Bayesian.”</p>
-            -  <small>Good Thinking: The Foundations of Probability and Its Applications.</small></h1>
-    </div>
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-        <div class="w3-xlarge w3-padding-32">
-            <h5>Social Media</h5>
-            <a href="https://www.linkedin.com/in/ming-feng-ho-a20431121"><i
-                    class="fab fa-linkedin w3-hover-opacity"></i></a>
-            <a href="https://www.researchgate.net/profile/Ming-Feng-Ho"><i
-                class="fab fa-researchgate w3-hover-opacity"></i></a> 
-            <a href="https://www.facebook.com/airofthehouse"><i
-                class="fab fa-facebook w3-hover-opacity"></i></a> 
-            <h6><a href="mailto: mho026@ucr.edu">Email Me</a></h6>
-        </div>
-    </footer>
+          </div>
 
-    <script>
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else {
-            x.className = x.className.replace(" w3-show", "");
-          }
+          <div class="c-hero__right">
+            <div class="c-hero__image">
+              <img alt="" data-cms-original-src="/images/01.jpg" loading="lazy" src="images/01adb2.jpg?_cchid=131e1e9c59cc4eabbc9f94ab31af1170">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(projects-section/projects-section.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
+<!-- begin projects -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Latest Works</h2>
+              <a class="section__link" href="projects.html">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description"><p>I show only my best works built completely with passion, simplicity, and creativity!</p></div>
+          </div>
+
+          
+          <div class="row">
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[0]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/green-plant.html">
+      <img alt="Green Plant" data-cms-original-src="/images/project-9.jpg" loading="lazy" src="images/project-94f2e.jpg?_cchid=1fed3f8686b45cd9ef11cad6b7a38fb9">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Green Plant</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[1]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/antelope-anyon.html">
+      <img alt="Antelope Canyon" data-cms-original-src="/images/project-8.jpg" loading="lazy" src="images/project-8789f.jpg?_cchid=51f3568a4db80b086a632be569bec447">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Antelope Canyon</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[2]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/quiet-lake.html">
+      <img alt="Quiet Lake" data-cms-original-src="/images/project-7.jpg" loading="lazy" src="images/project-756e7.jpg?_cchid=91aac70d5068075f7acff5533112ff04">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Quiet Lake</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[3]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/the-rocks.html">
+      <img alt="The rocks" data-cms-original-src="/images/project-6.jpg" loading="lazy" src="images/project-6e2af.jpg?_cchid=d3f6c75e69991cebbc56f84b10536656">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">The rocks</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[4]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/big-airplane.html">
+      <img alt="Big airplane" data-cms-original-src="/images/project-5.jpg" loading="lazy" src="images/project-5ce32.jpg?_cchid=3b04effdcc10f274a75d24784383c0e4">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Big airplane</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[5]) -->
+
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a class="c-project-card__image" href="project/mountains.html">
+      <img alt="Mountains" data-cms-original-src="/images/project-4.jpg" loading="lazy" src="images/project-4cb85.jpg?_cchid=741706d8c033d47ef29b59045318ff92">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">Mountains</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Photography</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+<!--bookshop-live end-->
+              
+            
+              
+            
+              
+            
+              
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end projects -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(testimonials-section/testimonials-section.jekyll.html) params(bind=block) context(block=content_blocks[2]) -->
+<!-- begin testimonials -->
+<section class="section testimonials animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">Happy Clients</h2>
+            <ul aria-label="Slider Navigation" class="controls list-reset" id="customize-controls" tabindex="0">
+              <li aria-controls="customize" class="prev" data-controls="prev" tabindex="-1">
+                <i class="ion ion-ios-arrow-back"></i>
+              </li>
+              <li aria-controls="customize" class="next" data-controls="next" tabindex="-1">
+                <i class="ion ion-ios-arrow-forward"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="section__description"></div>
+        </div>
+
+        
+        <div class="testimonials__slider my-slider">
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[0]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img alt="Justin Baptista" class="c-testimonial-card__client-avatar" data-cms-original-src="images/client-1.jpg" src="images/client-1fad2.jpg?_cchid=df02eec84b0c94fb328f547d2de151e3">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Justin Baptista</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Copywriter</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[1]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img alt="Kadin Herwitz" class="c-testimonial-card__client-avatar" data-cms-original-src="images/client-2.jpg" src="images/client-25c86.jpg?_cchid=0dd05d88c4a697efd6b9a2877c1233fb">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Kadin Herwitz</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Traveler</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[2]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img alt="Paul Wade" class="c-testimonial-card__client-avatar" data-cms-original-src="images/client-4.jpg" src="images/client-44dd1.jpg?_cchid=025138dfb51552d2fa7007d48267abe7">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Paul Wade</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Marketing</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[3]) -->
+
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img alt="Tatiana Curtis" class="c-testimonial-card__client-avatar" data-cms-original-src="images/client-3.jpg" src="images/client-325a0.jpg?_cchid=634a32994e9e4396242a1cb16f0690e4">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Tatiana Curtis</h3>
+        
+        
+          <p class="c-testimonial-card__client-position">Art Director</p>
+        
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Quamquam id quidem, infinitum est in hac urbe, Ita multo sanguine profuso in laetitia et in victoria est mortuus. Atqui pugnantibus et contrariis studiis semper.</p>
+    
+  </div>
+</div>
+<!--bookshop-live end-->
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(blog-section/blog-section.jekyll.html) params(bind=block) context(block=content_blocks[3]) -->
+<!-- begin blog -->
+<section class="section blog">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Recent Posts</h2>
+              <a class="section__link" href="blog.html">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description"><p>Vonge blog features productivity, tips, inspiration and strategies for massive profits. Find out how to set up a successful blog or how to make yours even better!</p> </div>
+          </div>
+
+          
+          <div class="row">
+            
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[0]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="blog/that-which-does-not-kill-us-makes-us-stronger.html">
+        <img alt="That which does not kill us makes us stronger" data-cms-original-src="/images/post-1.jpg" loading="lazy" src="images/post-1e6ba.jpg?_cchid=244c465237f65c19df0810b494cbfebf">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a class="c-blog-card__tag" href="tag/travel.html">travel</a>
+        
+        <a class="c-blog-card__tag" href="tag/lifestyle.html">lifestyle</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="blog/that-which-does-not-kill-us-makes-us-stronger.html">That which does not kill us makes us stronger</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img alt="Vanessa Marley" data-cms-original-src="/images/avatar.jpg" loading="lazy" src="images/avatar8e1c.jpg?_cchid=8995f27fa92e37f2a94b29daa6001261">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-13T12:01:35+00:00">13 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[1]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="blog/do-what-you-can-with-what-you-have-where-you-are.html">
+        <img alt="Do what you can, with what you have, where you are" data-cms-original-src="/images/post-2.jpg" loading="lazy" src="images/post-2dc98.jpg?_cchid=835eaaa1997fa78211cb91482513a9e8">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a class="c-blog-card__tag" href="tag/life.html">life</a>
+        
+        <a class="c-blog-card__tag" href="tag/story.html">story</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="blog/do-what-you-can-with-what-you-have-where-you-are.html">Do what you can, with what you have, where you are</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img alt="Vanessa Marley" data-cms-original-src="/images/avatar.jpg" loading="lazy" src="images/avatar8e1c.jpg?_cchid=8995f27fa92e37f2a94b29daa6001261">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-12T12:01:35+00:00">12 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+                <!--bookshop-live name(blog-card/blog-card.jekyll.html) params(post=post) context(post=site.posts[2]) -->
+
+<div class="c-blog-card col col-4 col-d-6 col-t-12">
+  <div class="c-blog-card__inner">
+
+    
+    <div class="c-blog-card__image-wrap">
+      <a class="c-blog-card__image" href="blog/strive-not-to-be-a-success-but-rather-to-be-of-value.html">
+        <img alt="Strive not to be a success, but rather to be of value" data-cms-original-src="/images/post-3.jpg" loading="lazy" src="images/post-3518f.jpg?_cchid=9983d484ace4b8f310239f1d7065bca6">
+      </a>
+    </div>
+    
+
+    <div class="c-blog-card__content">
+
+      
+      <div class="c-blog-card__tags-box">
+        
+        <a class="c-blog-card__tag" href="tag/life.html">life</a>
+        
+        <a class="c-blog-card__tag" href="tag/notes.html">notes</a>
+        
+      </div>
+      
+
+      <h2 class="c-blog-card__title">
+        <a href="blog/strive-not-to-be-a-success-but-rather-to-be-of-value.html">Strive not to be a success, but rather to be of value</a>
+      </h2>
+
+      <p class="c-blog-card__excerpt">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward.
+      </p>
+
+      <div class="c-blog-card__meta">
+        <div class="c-blog-card__author-image">
+          <img alt="Vanessa Marley" data-cms-original-src="/images/avatar.jpg" loading="lazy" src="images/avatar8e1c.jpg?_cchid=8995f27fa92e37f2a94b29daa6001261">
+        </div>
+        <div class="c-blog-card__info">
+          <div class="c-blog-card__author-name">Vanessa Marley</div>
+          <span class="c-blog-card__date"><time datetime="2018-11-11T12:01:35+00:00">11 Nov 2018</time></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--bookshop-live end-->
+              
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end blog -->
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(newsletter/newsletter.jekyll.html) params(bind=block) context(block=content_blocks[4]) -->
+<!-- begin subscribe -->
+
+<section class="c-subscribe section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="c-subscribe__inner">
+          <div class="c-subscribe__info">
+            <h3 class="c-subscribe__title">Join my mailing list</h3>
+            <div class="c-subscribe__subtitle">
+              <span id="ityped"></span>
+            </div>
+          </div>
+
+          <form action="http://frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3" class="c-subscribe__form validate" id="membedded-subscribe-form" method="POST" name="membedded-subscribe-form" novalidate="" target="_blank">
+            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+            <input class="c-subscribe__form-email required email" id="mce-EMAIL" name="EMAIL" placeholder="Your email address" type="text">
+            <button class="c-button c-button--primary c-button--large" id="membedded-subscribe" name="subscribe" type="submit">Subscribe</button>
+          <input name="_encrypted_details" type="hidden" value="ccdd778922f54fa5361bebfb53d98228"></form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end subscribe -->
+
+<script>
+  var itype_text = ['Get inspiration, updates and, cool stuff!'];
+</script>
+<!--bookshop-live end-->
+
+    <!--bookshop-live name(contact-form/contact-form.jekyll.html) params(bind=block) context(block=content_blocks[5]) -->
+<!-- begin contact -->
+
+<div class="c-contact-form" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="c-contact-form__form-box">
+          <div class="c-contact-form__contact-head">
+            <h2 class="c-contact-form__contact-title">Get in touch</h2>
+            <p class="c-contact-form__contact-description">Vonge comes with a built-in contact form.</p>
+          </div>
+          <form action="#" class="c-contact-form__form" method="POST">
+            
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-name">Your Name</label>
+              <input class="c-contact-form__form-input" id="form-name" name="name" placeholder="Your name..." required="" type="text">
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-email">Your Email</label>
+              <input class="c-contact-form__form-input" id="form-email" name="_replyto" placeholder="Your email..." required="" type="email">
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-text">Your Message</label>
+              <textarea class="c-contact-form__form-input" id="form-text" name="text" placeholder="Your message..." required="" rows="9"></textarea>
+            </div>
+            <div class="c-contact-form__form-group c-contact-form__form-group--button">
+              <button class="c-button c-button--primary c-button--large" type="submit">Send now</button>
+            </div>
+          <input name="_encrypted_details" type="hidden" value="ccdd41932fb80db17a04fbad0cc2ba2d93ebc5eac1cc4af0907cd96b"></form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end contact -->
+<!--bookshop-live end-->
+
+
+</div>
+
+<!--bookshop-live end-->
+
+    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+    <!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
+<!--bookshop-live name(social-link.jekyll.html) params() context() -->
+
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a aria-label="twitter icon" class="social__link" href="https://twitter.com/" rel="noopener" target="_blank"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="github icon" class="social__link" href="https://github.com/" rel="noopener" target="_blank"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="pinterest icon" class="social__link" href="https://pinterest.com/" rel="noopener" target="_blank"><i class="ion ion-logo-pinterest"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a aria-label="youtube icon" class="social__link" href="https://youtube.com/" rel="noopener" target="_blank"><i class="ion ion-logo-youtube"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+<!--bookshop-live end-->
+
+        <ul class="footer_nav list-reset">
+          
+          <li class="footer_nav__item">
+            <a class="footer_nav__link" href="index.html">Home</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a class="footer_nav__link" href="projects/index.html">Projects</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a class="footer_nav__link" href="elements/index.html">Elements</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a class="footer_nav__link" href="about/index.html">About</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a class="footer_nav__link" href="blog/index.html">Blog</a>
+          </li>
+          
+        </ul>
+
+        <div class="copyright"><p> 2021 © <a href="index.html">Vonge</a>. Template by <a href="https://cloudcannon.com/">CloudCannon</a>.</p></div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+    <script data-cms-original-src="/js/scripts.js" src="js/scriptsc821.js?_cchid=2c892f12782a7aa9d8e97e32a6c7f71f"></script>
+    <script data-cms-original-src="/js/common.js" src="js/common21d3.js?_cchid=3454a5a2d7b4febadefe57b3d1df6782"></script>
+
+<script>
+(function(){
+    const bookshopLiveSetup = (CloudCannon) => {
+      CloudCannon.enableEvents();
+      CloudCannon?.setLoading?.("Loading Bookshop Live Editing");
+      let triggeredLoad = false;
+      const whenLoaded = () => {
+        triggeredLoad = true;
+        CloudCannon?.setLoading?.(false);
+      }
+      setTimeout(() => {
+        if (!triggeredLoad) {
+          CloudCannon?.setLoading?.("Error Loading Bookshop Live Editing");
+          setTimeout(() => {
+            if (!triggeredLoad) { whenLoaded() }
+          }, 2000);
         }
-    </script>
+      }, 12000);
+  
+      const head = document.querySelector('head');
+      const script = document.createElement('script');
+      script.src = `/_cloudcannon/bookshop-live.js`;
+      script.onload = function() {
+        window.bookshopLive = new window.BookshopLive({
+          remoteGlobals: [],
+          loadedFn: whenLoaded,
+        });
+        const updateBookshopLive = async () => {
+          const frontMatter = await CloudCannon.value({
+            keepMarkdownAsHTML: false,
+            preferBlobs: true
+          });
+          const options = window.bookshopLiveOptions || {};
+          const rendered = await window.bookshopLive.update(frontMatter, options);
+          if (rendered) CloudCannon?.refreshInterface?.();
+        }
+        document.addEventListener('cloudcannon:update', updateBookshopLive);
+        updateBookshopLive();
+      }
+      head.appendChild(script);
+    }
+  
+    document.addEventListener('cloudcannon:load', function (e) {
+      bookshopLiveSetup(e.detail.CloudCannon);
+    });
+  })();
+</script>
 
 </body>
+<!-- Mirrored from jazzed-kale.cloudvent.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 06 Aug 2024 00:29:14 GMT -->
 </html>
