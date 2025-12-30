@@ -1310,35 +1310,35 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-/* --- OUTREACH: kill the pink hover overlay, use gold border instead --- */
-#outreach .service-item::before,
-#outreach .service-item:hover::before {
-  content: none !important;   /* disables the pink overlay entirely */
+/* === HARD KILL PINK OVERLAY FOR OUTREACH ONLY === */
+
+#outreach.services .service-item::before {
+  background: transparent !important;
+  inset: 100% 0 0 0 !important;
 }
 
-#outreach .service-item {
-  background: #fff !important;
+#outreach.services .service-item:hover::before {
+  background: transparent !important;
+  inset: 100% 0 0 0 !important;
+}
+
+#outreach.services .service-item {
+  background: #fff;
   border: 2px solid rgba(0,0,0,0.15);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-#outreach .service-item:hover {
-  background: #fff !important;
-  border-color: #d4af37 !important; /* gold */
+#outreach.services .service-item:hover {
+  background: #fff;
+  border-color: #d4af37; /* subtle gold */
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
 
-/* keep text and icons the same colors on hover (no forced white) */
-#outreach .service-item:hover h4,
-#outreach .service-item:hover p,
-#outreach .service-item:hover .icon i {
-  color: inherit !important;
+/* Do NOT invert text or icon colors */
+#outreach.services .service-item:hover h4,
+#outreach.services .service-item:hover p,
+#outreach.services .service-item:hover .icon i {
+  color: inherit;
 }
 
-/* keep links normal, not pink-hover */
-#outreach .service-item a,
-#outreach .service-item a:hover,
-#outreach .service-item a:focus {
-  color: inherit !important;
-}
