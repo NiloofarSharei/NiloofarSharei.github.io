@@ -1310,23 +1310,35 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-/* Outreach cards: no pink background hover, emphasize border instead */
+/* --- OUTREACH: kill the pink hover overlay, use gold border instead --- */
+#outreach .service-item::before,
+#outreach .service-item:hover::before {
+  content: none !important;   /* disables the pink overlay entirely */
+}
+
 #outreach .service-item {
-  border: 1px solid rgba(0,0,0,0.15);
-  background: #fff;
+  background: #fff !important;
+  border: 2px solid rgba(0,0,0,0.15);
   transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 #outreach .service-item:hover {
-  background: #fff;                /* prevents colored fill */
-  border-color: rgba(0,0,0,0.35);  /* stronger border */
+  background: #fff !important;
+  border-color: #d4af37 !important; /* gold */
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
 
-/* Keep link color from changing to pink on hover inside outreach cards */
+/* keep text and icons the same colors on hover (no forced white) */
+#outreach .service-item:hover h4,
+#outreach .service-item:hover p,
+#outreach .service-item:hover .icon i {
+  color: inherit !important;
+}
+
+/* keep links normal, not pink-hover */
 #outreach .service-item a,
 #outreach .service-item a:hover,
 #outreach .service-item a:focus {
-  color: inherit;
+  color: inherit !important;
 }
